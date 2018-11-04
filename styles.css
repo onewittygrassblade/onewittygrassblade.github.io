@@ -1,0 +1,125 @@
+* {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: url("images/swiss-alps.jpg");
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(0, 20, 20, 0.6);
+}
+
+nav a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: white;
+  transition: color 0.5s;
+}
+
+nav svg {
+  height: 32px;
+  fill: white;
+  transition: fill 0.5s;
+}
+
+nav:hover a {
+  color: rgb(170, 170, 170);
+  transition: color 0.5s;
+}
+
+nav:hover svg {
+  fill: rgb(170, 170, 170);
+  transition: fill 0.5s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav svg:hover {
+  fill: white;
+}
+
+a.nav-icon {
+  position: relative;
+  top: 2px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+div.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92%;
+}
+
+p#tagline {
+  color: white;
+  font-size: 3em;
+  text-shadow: 0 0 30px rgb(0, 20, 20);
+}
+
+div.content {
+  height: 86%;
+  width: 90%;
+  padding: 30px;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  font-size: 1em;
+  color: rgb(0, 50, 100);
+}
+
+div.content p {
+  margin: 10px 0;
+}
+
+div.content a {
+  color: rgb(0, 50, 100);
+}
+
+div.content figure {
+  margin: 20px 0;
+}
+
+div.content figcaption {
+  font-style: italic;
+}
+
+div.content p.rambles {
+  text-align: justify;
+}
+
+div.content ul {
+  text-align: justify;
+}
+
+div.content span.def {
+  font-weight: bold;
+}
