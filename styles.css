@@ -123,3 +123,39 @@ div.content ul {
 div.content span.def {
   font-weight: bold;
 }
+
+div#login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 400px;
+  padding: 30px 0;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: rgb(0, 50, 100);
+}
+
+p#login-prompt {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+input#password {
+  height: 20px;
+  width: 220px;
+  padding: 10px;
+}
+
+p#wrong-password {
+  color: red;
+}
+
+button#login-button {
+  background-color: rgba(0, 50, 100);
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+}
