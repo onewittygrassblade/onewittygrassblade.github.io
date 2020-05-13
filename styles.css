@@ -1,7 +1,15 @@
+/*
+ * High level styles
+ */
+
 * {
   font-family: Verdana, sans-serif;
+  color: white;
   margin: 0;
   padding: 0;
+  --main-bg-color: rgba(0, 15, 20, 0.7);
+  --dark-font-color: rgb(0, 50, 100);
+
 }
 
 html, body {
@@ -9,12 +17,8 @@ html, body {
 }
 
 body {
-  background-image: url("images/swiss-alps.jpg");
+  background-image: url("swiss-alps-filters.jpg");
   background-size: cover;
-}
-
-h1 {
-  color: white;
 }
 
 header {
@@ -22,13 +26,16 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: rgba(0, 20, 20, 0.6);
+  background-color: var(--main-bg-color);
 }
+
+/*
+ * Navigation menu styles
+ */
 
 nav a {
   font-size: 1.2em;
   text-decoration: none;
-  color: white;
   transition: color 0.5s;
 }
 
@@ -72,6 +79,10 @@ nav li {
   margin: 0 20px;
 }
 
+/*
+ * Page content general styles
+ */
+
 div.center-container {
   display: flex;
   justify-content: center;
@@ -79,21 +90,22 @@ div.center-container {
   height: 92%;
 }
 
-p#tagline {
-  color: white;
-  font-size: 3em;
-  text-shadow: 0 0 30px rgb(0, 20, 20);
-}
-
 div.content {
   height: 86%;
   width: 90%;
   padding: 30px;
   overflow-y: auto;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: var(--main-bg-color);
   text-align: center;
   font-size: 1em;
-  color: rgb(0, 50, 100);
+}
+
+div.content section {
+  margin-bottom: 40px;
+}
+
+div.content h2 {
+  margin-bottom: 40px;
 }
 
 div.content p {
@@ -101,28 +113,48 @@ div.content p {
 }
 
 div.content a {
-  color: rgb(0, 50, 100);
+  color: rgb(120, 180, 50);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 div.content figure {
-  margin: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 div.content figcaption {
   font-style: italic;
 }
 
-div.content p.rambles {
+div.content div.rambles {
   text-align: justify;
 }
 
 div.content ul {
-  text-align: justify;
+  margin-left: 20px;
+}
+
+div.content ul li {
+  padding: 5px;
 }
 
 div.content span.def {
   font-weight: bold;
 }
+
+/*
+ * Home page styles
+ */
+
+p#tagline {
+  font-size: 3em;
+  text-shadow: 0 0 25px black;
+}
+
+/*
+ * Protected page styles
+ */
 
 div#login-box {
   display: flex;
@@ -133,11 +165,11 @@ div#login-box {
   padding: 30px 0;
   border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.75);
-  color: rgb(0, 50, 100);
 }
 
 p#login-prompt {
   font-size: 18px;
+  color: var(--dark-font-color);
   margin-bottom: 20px;
 }
 
@@ -145,15 +177,16 @@ input#password {
   height: 20px;
   width: 220px;
   padding: 10px;
+  color: var(--dark-font-color);
 }
 
 p#wrong-password {
   color: red;
+  margin-top: 5px;
 }
 
 button#login-button {
   background-color: rgba(0, 50, 100);
-  color: white;
   font-size: 18px;
   padding: 10px 20px;
   border: none;
