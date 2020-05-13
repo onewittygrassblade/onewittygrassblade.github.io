@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # onewittygrassblade.github.io
 Personal website, view [here](https://onewittygrassblade.github.io).
 
