@@ -84,6 +84,7 @@ nav li {
 
 div.center-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 92%;
@@ -148,7 +149,8 @@ div.content span.def {
 
 p#tagline {
   font-size: 3em;
-  text-shadow: 0 0 25px black;
+  text-shadow: 0 0 20px black;
+  margin-bottom: 30px;
 }
 
 /*
